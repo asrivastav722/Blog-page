@@ -1,0 +1,395 @@
+*{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(238, 245, 242);
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/* Header Section ------------------------------------------------------------------------------------------------------------------------------ */
+
+.header{
+    display : flex;
+    background-color : rgb(255, 255, 255);
+    box-shadow : 0px 0px 1px rgba(0, 0, 0, 0.604);
+    color :rgba(0, 0, 255, 0.433);
+    justify-content: space-between;
+    height : 15vh;
+    align-items : center;
+}
+
+.heading{
+    font-size: 8vh;
+    margin-left:20px;
+}
+
+
+/* Experimental Portion---------------------------------------------------------------- */
+.formbtntog{
+    
+    background-color: rgba(255, 255, 255, 0.555);
+    height:22px;
+    width:40px;
+    color:rgb(255, 255, 255);
+    margin-left: 65vw;
+    border: 1px solid rgb(97, 96, 96);
+    border-radius: 20px;
+}
+.circle{
+    background-color : rgba(0, 0, 0, 0.37);
+    color: rgba(0, 0, 0,0);
+    border:none;
+    height :18px;
+    width :18px;
+    margin:2px;
+    margin-left:2px;
+    border-radius :100%;
+    cursor: pointer;
+    transition: margin-left 1s;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+.createbtn{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 5vw;
+    border:none;
+    font-size: 8vh;
+    background-color: white;
+    border-radius: 100px;
+    color: blue;
+}
+.createbtn:hover{
+    color: rgb(242, 65, 65);
+    cursor: pointer;
+}
+
+
+
+
+
+/* Blog Area--------------------------------------------------------------------------------------------------------------------- */
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-start;
+    min-height: 70vh;
+    height: max-content;
+    
+}
+.notice{
+    margin-top:100px;
+    color: rgba(0, 0, 0, 0.469);
+    font-weight: normal;
+}
+
+.blogcard{
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.848);
+    width: 550px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: fit-content;
+    height:fit-content;
+    border: none;
+    box-shadow: 0px 2px 3px  rgba(0, 0, 0, 0.143);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: stretch;
+}
+
+.datetime{
+    font-size: 10pt;
+    color: rgba(0, 0, 0, 0.638);
+}
+
+#blogtitle{
+    font-weight: bold;
+}
+
+.button{
+    font-family:Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width:250px;
+    font-size: 10pt;
+    background-color: rgb(255, 255, 255);
+    color: rgba(1, 0, 0, 0.508);
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.051) ;
+    cursor: pointer;
+    }
+.upperhr{
+   margin-top: 10px;
+   
+}
+hr{
+    
+    height: 10px;
+     
+}
+
+.buttonarea{
+    display: flex; 
+    justify-content:space-around;
+    margin-top: 0px;
+    border-top: 0.1px solid rgba(0, 0, 0, 0.089);
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.089);
+}
+
+
+
+
+
+/* Create Post Area------------------------------------------------------------------------------------------------------------------*/
+
+.createpostarea{
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.71);
+}
+.createcard{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height:55vh;
+    width:50vw;
+    padding: 30px;
+    box-shadow: 0px 0px 1px black;
+    border-radius: 10px;
+    justify-content: space-between;    
+}
+.labeltitle{
+    font-size: 14pt;
+}
+.labelcontent{
+    font-size: 14pt;
+}
+.inputtitle{
+    padding: 10px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    scrollbar-width:none;
+    resize: none;
+    box-shadow: 0px 0px 4px  rgba(0, 0, 0, 0.397);
+    color: rgba(0, 0, 0, 0.661);
+}
+.inputcontent{
+    color: rgba(0, 0, 0, 0.661);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    scrollbar-width:none;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height:100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px  rgba(0, 0, 0, 0.397);
+    resize: none;
+}
+.submitbutton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    color:white;
+    text-shadow: 0px 0px 1px rgb(255, 255, 255);
+    height: 40px;
+    width: 80px;
+    box-shadow: 0px 0px 1px black;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.809), rgb(129, 79, 235), rgba(0, 0, 255, 0.843));
+    background-size: 200% auto;  
+}
+.submitbutton:hover{
+    background-position: right center;
+    cursor: pointer;
+    color: white;
+}
+.discardbtn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    
+    color:white;
+    text-shadow: 0px 0px 1px rgb(255, 255, 255);
+    height: 40px;
+    width: 80px;
+    box-shadow: 0px 0px 1px black;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-image: linear-gradient(to right, #ff2222e0, #e97b7b , #ff0000d6);
+    background-size: 200% auto;
+}
+.discardbtn:hover{
+    background-position: right center;
+    cursor: pointer;
+    color: white;
+    
+}
+.btns{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    
+
+}
+      
+
+
+
+
+/* Footer--------------------------------------------------------------------------------------------------------------------------- */
+
+.footer{
+    width:100vw;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow:0px 0px 1px rgba(0, 0, 0, 0.603);
+    height: 15vh; 
+    color:rgba(0, 0, 0, 0.683);
+    position:relative;
+    bottom:0;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Mobile devices ============================================================================================================================*/
+
+@media (max-width: 480px) {
+/* header================================================================== */
+.header{     
+    height : 10vh;
+}
+.heading{
+    font-size: 5vh;
+}
+.createbtn{
+    margin-right: 40px;
+}
+/* ========================================================================== */
+.grid-container{
+    min-height: 80vh;
+}
+.notice{
+    margin:120px;
+    text-align: center;
+}
+.blogcard{
+    background-color: rgb(255, 255, 255);
+    width: 80vw;
+    min-height: fit-content;
+    font-size: 14pt;
+    gap: 20px;
+}
+.datetime{
+    font-size: 10pt;
+    color: rgba(0, 0, 0, 0.638);
+}
+.button{
+    height: 40px;
+    width:150px;
+}
+/* Create Post Area------------------------------------------------------------------------------------------------------------------*/
+
+.createpostarea{
+    min-height: 80vh;
+}
+.createcard{
+    height:70vh;
+    width:83vw;
+    justify-content:flex-start;    
+}
+.labeltitle{
+    font-size: 18pt;
+}
+.labelcontent{
+    font-size: 18pt;
+}
+.inputtitle{
+    padding-top: 17px;
+    font-size: 20pt;
+    height: 30pt;
+    border-radius: 5px;
+}
+.inputcontent{
+    font-size: 17pt;
+    height: fit-content;
+    padding:10px;
+    height:300px;
+    border-radius: 5px;
+}
+.submitbutton{
+    font-size: 17pt;
+    height: 50px;
+    border-radius: 15px; 
+    flex-basis: 400px;
+}
+.discardbtn{
+    font-size: 17pt;
+    height: 50px;
+    border-radius: 15px;
+    flex-basis: 400px;
+}
+
+.btns{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+/* Footer============================================================================================== */
+
+
+  .footer{
+    font-size: 11pt;
+    gap: 10px;    
+    height: 10vh;  
+    } 

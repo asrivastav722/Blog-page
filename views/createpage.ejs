@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create A New Blog -BlogSpot</title>
+    <link class="styless"rel="stylesheet" href="<%=add%>">
+</head>
+
+<body>
+    <!-- Header-------------------------------------------------------------------------------------------------------------------->
+    <%- include("partials/header.ejs")%>
+<div class="createpostarea">
+    
+        <form class="createcard" action="/postbutton" method="post" onclick="makeStatic()">
+            <h1 class="createheading">Create a new....</h1>
+            <br>
+            <label class="labeltitle" for="Title">Title:</label>
+            <br>
+            <textarea class="inputtitle" type="text" name="newtitle" required></textarea>
+            <br>
+            <label class="labelcontent"for="content">Description:</label>
+            <br>
+            <textarea cols="4" class="inputcontent" type="textbox" name="newcontent" required></textarea>
+            <br>
+            <div class="btns">
+                <input class="submitbutton" type="submit" value="Post">
+
+                <form action="discard" action="/discard" method="post">
+                    <input class="discardbtn" type="submit" value="Discard">
+                </form> 
+
+            </div>
+            
+        </form>
+    
+</div>
+    <!-- Footer-------------------------------------------------------------------------------------------------------------------->
+    <%- include("partials/footer.ejs")%>
+    <script src="script.js"></script>
+</body>
+
+</html>
