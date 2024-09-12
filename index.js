@@ -57,7 +57,7 @@ app.post("/editpost", (req, res) => {
     var date = new Date();
     var year = date.getFullYear();
     toEdit = req.body["editbutton"];
-    res.render("changepostpage.ejs", { blogs, toEdit, year ,add});
+    res.render("changepostpage.ejs", {value, blogs, toEdit, year ,add});
 });
 
 app.post("/changepostbutton", (req, res) => {
